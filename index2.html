@@ -1,11 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>test</title>
-
-<style>
-/* basic styles for black background and crosshair cursor */
+<style type="text/css">
 body {
 	background: #000;
 	margin: 0;
@@ -15,13 +11,15 @@ canvas {
 	cursor: crosshair;
 	display: block;
 }
+h1{
+font-family:STHeiti;
+color:#ea68a2;
+text-align:center;
+}
 </style>
-
-</head>
-<body>
-
-<canvas id="canvas"></canvas>
-
+<title>
+天天年年想你
+</title>
 <script>
 // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
 // not supported in all browsers though and sometimes needs a prefix, so we need a shim
@@ -243,7 +241,7 @@ function loop() {
 	// lighter creates bright highlight points as the fireworks and particles overlap each other
 	ctx.globalCompositeOperation = 'lighter';
 	
-    var text = "林春晓 !!";  
+    var text = "林春晓真美丽!!";  
   ctx.font = "50px sans-serif";
   var textData = ctx.measureText(text);
   ctx.fillStyle = "rgba("+parseInt(random(0,255))+","+parseInt(random(0,255))+","+parseInt(random(0,255))+",0.3)";
@@ -314,8 +312,12 @@ canvas.addEventListener( 'mouseup', function( e ) {
 window.onload = loop;
 
 </script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+
 <div style="text-align:center;">
-you are the best
+<p>      ******       ******    **********   **********  ************* ************* ***************************** ***************************** *****************************  ***************************    ***********************      *******************        ***************          ***********            *******              ***               *</p>
 </div>
 </body>
 </html>
