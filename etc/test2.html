@@ -1,0 +1,45 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WindowDialog.aspx.cs" Inherits="AspNetPagerDemo.WebForm2" %>  
+  
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+    <title></title>  
+    <script src="Scripts/jquery-3.1.1.min.js"></script>  
+    <script type="text/javascript">  
+        function WindowDialog1()  
+        {  
+            window.location.href = "http://www.baidu.com";  
+        }  
+        function WindowDialog2(id)  
+        {  
+            window.location.replace("http://www.weibo.com" +"?Id="+id);  
+        }  
+        function WindowDialog3()  
+        {  
+            $(location).attr('href', 'http://www.weibo.com');  
+        }  
+    </script>  
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+    <div>  
+      <ul>  
+      <li>  
+      <a herf="#"  onclick ="WindowDialog1()">润滑管理</a>  
+      </li>  
+      <li>  
+      <a herf="#" onclick ="WindowDialog2(<%=strID%>)">台账管理</a>  
+      </li>  
+      <li>  
+      <a id="a3" onclick ="WindowDialog3()">设备管理</a>  
+      </li>       
+      <li>  
+      <a href="http://www.weibo.com?Id=<%= strID %>">故障管理</a>  
+      </li>  
+      </ul>  
+    </div>  
+    </form>  
+</body>  
+</html>  

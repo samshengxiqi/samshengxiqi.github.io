@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+    function test(){
+        var s = document.getElementById("txt");
+        /*s.iscot();*/
+        location.href="xiaofeiji.html?"+"txt="+encodeURI(s.value);
+    }
+    /*function iscot(str){
+    	var str=self.str;
+    	var strcollec={"不错","我爱你","好","很好"}
+    	if (str.indexof(strcollec)=0){
+    		return "我觉得也不错"
+    	}else if(str.indexof(strcollec)=1){
+    		return "我也爱你"
+    	}else if(str.indexof(strcollec)=2){
+    		return "难道只是好吗"
+    	}else if（str.indexof(strcollec)=3）{
+    		return "很好有多好"
+    	}else return str
+    }*/
+</SCRIPT>
+<body>
+
+<input type="text" id="txt">
+</br>
+<input type="button" value="心情怎么样？" onclick="test()"/>
+
+</body>
+</html>
